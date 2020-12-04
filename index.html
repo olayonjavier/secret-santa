@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Secret Santa - 2020</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css" integrity="sha384-F1AY0h4TrtJ8OCUQYOzhcFzUTxSOxuaaJ4BeagvyQL8N9mE4hrXjdDsNx249NpEc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="/index.html">Secret Santa</a>
+        </nav>
+        <main class="py-4">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <h1>Secret Santa Helper - Information</h1>
+                </div>
+                <p>
+                    Welcome to my Secret Santa Helper. Simply input the amount of participants into the form below. 
+                    <br>
+                    A form will show for each participant, insert their names and numbers and each person will recieve a text message telling them who they're secret santa for!
+                </p>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="card border-info">
+                            <h4 class="card-header bg-info">Secret Santa Helper</h4>
+                            <div class="card-body">
+                                <form id="secretSantaForm">
+                                    <input type="number" name="numOfGifters" placeholder="Number of Santas" min="1" id="numOfGifters"/>
+                                    <input type="button" onClick="handler()" id="numOfGiftersButton" value="Submit" />
+                                </form>
+                                <form id="contactInfoForm"></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="index.js"></script>
+</html>
